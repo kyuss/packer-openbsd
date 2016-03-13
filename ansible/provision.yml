@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  sudo: true
+  tasks:
+    - name: Update all packages
+      openbsd_pkg: name=* state=latest
